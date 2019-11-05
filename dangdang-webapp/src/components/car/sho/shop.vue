@@ -2,12 +2,12 @@
     <div>
         <section class="nav-btm">
             <div class="checkbox">
-                <input type="checkbox" class="qanxuan"/>
+                <input type="checkbox" v-model="data.checked" class="qanxuan"/>
             </div>
-            <div class="img"></div><div>当当网</div><div>已免运费</div>
+            <div class="img"></div><div>{{data.shopName}}</div><div>{{data.goods}}</div>
             <a href="">编辑</a>
         </section>
-        <dd-car-content-productList></dd-car-content-productList>
+        <dd-car-content-productList :data="data" :sid="sid"></dd-car-content-productList>
     </div>
 </template>
 
@@ -17,7 +17,8 @@
         name: 'productList',
         components:{
             "dd-car-content-productList":productList
-        }
+        },
+        props:["data","sid"]
     }
 </script>
 

@@ -22,6 +22,7 @@
 <script>
     export default {
         name: 'item',
+        props:["data","sid","pid"]
     }
 </script>
 
