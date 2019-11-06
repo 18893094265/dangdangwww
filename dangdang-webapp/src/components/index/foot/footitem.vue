@@ -1,11 +1,11 @@
 <template>
-    <div><img :src="conent.pic" alt=""></div>
+    <img :src="data.pic" alt="">
 </template>
 
 <script>
     export default {
-        name: 'item',
-        props:["data","conent"]
+        name: 'footitem',
+        props:["data"]
     }
 
 

@@ -1,12 +1,13 @@
 <template>
     <section class="index-img2">
-        <img src="../../assets/images/imgs1/215060129933643_y.jpg" alt="">
+        <img :src="data.pic1" alt="">
     </section>
 </template>
 
 <script>
     export default {
-        name: 'navimg2'
+        name: 'navimg2',
+        props:["data"]
     }
 </script>
 

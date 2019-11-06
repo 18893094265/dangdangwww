@@ -1,10 +1,10 @@
 <template>
     <div>
         <section class="nav-top">
-            <img src="../../assets/images/imgs1/zuobian-1541766933.png" alt="">
-            <img src="../../assets/images/imgs1/youbian-1541766952.png" alt="">
+            <img :src="data.pic1" alt="">
+            <img :src="data.pic2" alt="">
         </section>
-        <img class="close-img" src="../../assets/images/imgs1/close-app-download.png" alt="">
+        <img class="close-img" :src="data.pic3" alt="">
     </div>
 </template>
 

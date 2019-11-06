@@ -1,15 +1,16 @@
 <template>
     <section class="nav-btm">
-        <img src="../../assets/images/imgs1/logo.png" alt="">
-        <input type="text" placeholder="了不起的中国">
-        <img src="../../assets/images/imgs1/meau.png" alt="">
+        <img :src="data.pic1" alt="">
+        <input type="text" :placeholder="data.input">
+        <img :src="data.pic2" alt="">
         <span></span>
     </section>
 </template>
 
 <script>
     export default {
-        name: 'vnav'
+        name: 'vnav',
+        props:["data"]
     }
 </script>
 

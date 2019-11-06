@@ -2,11 +2,11 @@
     <div>
         <dd-index-topimg :data="indexInfo.topimg"></dd-index-topimg>
         <dd-index-nav :data="indexInfo.nav"></dd-index-nav>
-        <dd-index-navimg1 :data="indexInfo.navimg1"></dd-index-navimg1>
+        <dd-index-navimg1></dd-index-navimg1>
         <dd-index-navimg2 :data="indexInfo.navimg2"></dd-index-navimg2>
-        <dd-index-content :data="indexInfo.conents"></dd-index-content>
+        <dd-index-content :data="indexInfo"></dd-index-content>
         <dd-index-seckill :data="indexInfo.seckill"></dd-index-seckill>
-        <dd-index-footer :data="indexInfo.indexfooter"></dd-index-footer>
+        <dd-index-footer :data="indexInfo"></dd-index-footer>
     </div>
 </template>
 
@@ -39,6 +39,7 @@
             _initPageData() {
                 indexapi.getIndexInfo(data => {
                     this.indexInfo = data;
+                    console.log(data)
                 });
             }
         },
@@ -50,4 +51,5 @@
 
 <style scoped>
     @import "../assets/index/index.css";
+    @import "../../node_modules/swiper/css/swiper.css";
 </style>
