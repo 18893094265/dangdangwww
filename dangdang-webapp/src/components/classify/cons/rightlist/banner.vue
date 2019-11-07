@@ -1,7 +1,4 @@
 <template>
-<!--    <section class="index-img1">-->
-<!--        <img :src="data.pic1" alt="">-->
-<!--    </section>-->
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="(u,index) in banner" :key="index"><img :src="u" ></div>
@@ -18,10 +15,10 @@
         data(){
             return {
                 banner:[
-                    require("../../../src/assets/images/imgs1/10ynew1242x366.jpg"),
-                    require("../../../src/assets/images/imgs1/1242-366-1570761039.jpg"),
-                    require("../../../src/assets/images/imgs1/222060123100431_y.jpg"),
-                    require("../../../src/assets/images/imgs1/215060129932701_y.jpg")
+                    require("../../../../../src/assets/images/imgs1/10ynew1242x366.jpg"),
+                    require("../../../../../src/assets/images/imgs1/1242-366-1570761039.jpg"),
+                    require("../../../../../src/assets/images/imgs1/222060123100431_y.jpg"),
+                    require("../../../../../src/assets/images/imgs1/215060129932701_y.jpg")
                 ]
             }
         },
@@ -44,7 +41,7 @@
 <style scoped>
     .swiper-slide img{
         width: 100%;
-        height:1.5rem;
+        height:1.02rem;
     }
 
 </style>

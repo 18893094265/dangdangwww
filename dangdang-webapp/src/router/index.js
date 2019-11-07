@@ -1,25 +1,36 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
-import index from "../views/index"
-import main from "../views/main"
-import car from "../views/car"
+import indexs from "../views/index"
+import mains from "../views/main"
+import cars from "../views/car"
+import classify from "../views/classify"
 
 Vue.use(VueRouter);
 
 let router = new VueRouter({
-   router:[
+   routes:[
        {
            path: '/',
-           redirect: main,
+           redirect: "/main/index",
        },
        {
            path: '/main',
-           component: index,
+           component: mains,
+           children:[
+               {
+                   path: 'index',
+                   component: indexs
+               },
+               {
+                   path: 'car',
+                   component: cars
+               },
+               {
+                   path: 'classify',
+                   component: classify
+               }
+           ]
        },
-       {
-           path: '/car',
-           component: car
-       }
    ]
 });
 

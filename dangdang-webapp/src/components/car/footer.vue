@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer class="footer1">
         <div class="checkbox2">
             <input type="checkbox" id="list" class="cquanxuan" v-model="data.checked1"/><label for="list">全选</label>
         </div>

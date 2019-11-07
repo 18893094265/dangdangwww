@@ -11,12 +11,6 @@ module.exports = {
                     "input":"了不起的中国",
                     "pic2":"http://59.110.229.146/images/imgs1/meau.png"
                 },
-                "navimg1":[
-                    {"pic1":"http://59.110.229.146/images/imgs1/222060123100431_y.jpg"},
-                    {"pic1":"http://59.110.229.146/images/imgs1/215060129934944_y.jpg"},
-                    {"pic1":"http://59.110.229.146/images/imgs1/14540059153154_y.jpg"},
-                    {"pic1":"http://59.110.229.146/images/imgs1/222060123100431_y.jpg"},
-                    ],
                 "navimg2":{
                     "pic1":"http://59.110.229.146/images/imgs1/215060129933643_y.jpg"
                 },

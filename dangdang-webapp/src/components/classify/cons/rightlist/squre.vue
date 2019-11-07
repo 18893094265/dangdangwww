@@ -1,14 +1,11 @@
 <template>
-    <img :src="data.pic" alt="">
+        <div>进入当当书城<p>特价地址1.9折</p></div>
 </template>
 
 <script>
     export default {
-        name: 'footitem',
-        props:["data"]
+        name: 'squre'
     }
-
-
 </script>
 
 

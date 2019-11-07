@@ -1,6 +1,6 @@
 <template>
     <div>
-        <dd-car-content-item :data="product" v-for="(product,pid) in data" :key="pid" :sid="sid"></dd-car-content-item>
+        <dd-car-content-item :data="product" v-for="(product,pid) in data.products" :key="pid" :sid="sid" :pid="pid"></dd-car-content-item>
     </div>
 </template>
 

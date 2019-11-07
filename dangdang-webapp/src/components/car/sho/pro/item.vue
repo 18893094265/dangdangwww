@@ -1,15 +1,15 @@
 <template>
     <section class="con1">
         <div class="checkbox1">
-            <input type="checkbox" class="danxuan"/>
+            <input type="checkbox" class="danxuan" v-model="data.checked"/>
         </div>
         <div class="right-car">
             <div class="r-car-top">
-                <img src="../../../../../src/assets/images/imgs4/23562339-1_l_4.jpg" alt="">
+                <img :src="data.pic" alt="">
                 <div class="text">
-                    <p>人性的弱点（权威译本）</p>
-                    <p>￥<span>19.10</span>&nbsp;<span>￥39.80</span></p>
-                    <p><span>限时抢</span><br>x1</p>
+                    <p>{{data.title}}</p>
+                    <p>￥<span>{{data.price}}</span>&nbsp;<span>{{data.yprice}}</span></p>
+                    <p><span>{{data.con}}</span><br>x1</p>
                 </div>
             </div>
             <div class="r-car-btm">

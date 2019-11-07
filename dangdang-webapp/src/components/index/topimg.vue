@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="nav-top">
+        <section class="nav-top1">
             <img :src="data.pic1" alt="">
             <img :src="data.pic2" alt="">
         </section>
