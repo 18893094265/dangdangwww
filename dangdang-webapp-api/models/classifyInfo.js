@@ -1,6 +1,6 @@
-module.default ={
-    getClassifyInfo() {
-        let classifys = {
+module.exports ={
+    getclassifyInfo() {
+        let classifyInfo = {
             "vheader": {
                 "input": "搜索商品/店铺/种类"
             },
@@ -75,11 +75,21 @@ module.default ={
                             "text6":"纪实文学",
                             "text7":"中国古诗词",
                             "text8":"展开"
+                        },
+                        {
+                            "text1":"文学",
+                            "text2":"畅销榜",
+                            "text3":"中国现代随笔",
+                            "text4":"名家作品",
+                            "text5":"文集",
+                            "text6":"纪实文学",
+                            "text7":"中国古诗词",
+                            "text8":"展开"
                         }
                     ]
                 }
             }
         };
-        return classifys
+        return classifyInfo
     }
 };

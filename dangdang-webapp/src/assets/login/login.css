@@ -1,0 +1,70 @@
+html{
+    font-size: 26.67vw;
+}
+body{
+    background-color: white;
+}
+.login-main{
+    padding:0.85rem 0.4rem 0 0.4rem;
+    box-sizing: border-box;
+    font-size:0.1rem;
+}
+.login-main1{
+    height:0.7rem;
+    border-bottom: 0.005rem solid gray;
+}
+.login-main1>a{
+    font-size:0.22rem;
+    color:rgb(50,50,50);
+    display: inline-block;
+    height:0.4rem;
+    width:1.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+}
+.login-main1>a:nth-of-type(2){
+    text-align:right;
+}
+.login-main2{
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.35rem;
+    box-sizing: border-box;
+
+}
+.login-main3{
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.35rem;
+    box-sizing: border-box;
+}
+.login-main2>input,.login-main3>input{
+    width:100%;
+}
+.login-main4{
+    height:0.5rem;
+    font-size:0.16rem;
+    /*position: relative;*/
+}
+.login-main4>span{
+    /*position: absolute;*/
+    /*left:0.01rem;*/
+    /*top:0.01rem;*/
+}
+.login-main5{
+    height:1.4rem;
+}
+.login-main5>div{
+    height:0.65rem;
+}
+.login-main5 a{
+    font-size:0.22rem;
+}
+.login-p1{
+    height:0.5rem;
+    font-size: 0.14rem;
+}
+.login-main6{
+    font-size: 0.14rem;
+    height:1rem;
+}

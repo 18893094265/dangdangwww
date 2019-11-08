@@ -1,0 +1,199 @@
+html{
+    font-size:26.67vw;
+}
+body{
+    background-color: rgb(239,244,250);
+}
+.buyingheader{
+    display: flex;
+    position: fixed;
+    top:0rem;
+    left:0rem;
+    right:0rem;
+    justify-content: space-around;
+    background-color:rgb(255,255,255);
+    border-bottom: rgb(228,228,228) solid 0.01rem;
+}
+.buyingheader>div:nth-of-type(1){
+    width:0.4rem;
+    height:0.44rem;
+    padding:0.14rem 0 0 0.15rem;
+    box-sizing: border-box;
+}
+.buyingheader>div:nth-of-type(2){
+    padding:0.17rem 0 0 0.15rem;
+    box-sizing: border-box;
+    width:0.5rem;
+    height:0.44rem;
+}
+.buyingheader>div:nth-of-type(1)>img{
+    width:0.09rem;
+    height:0.16rem;
+}
+.buyingheader>div:nth-of-type(2)>img{
+    width:0.23rem;
+    height:0.08rem;
+}
+.buyingheader>p{
+    width:2.85rem;
+    height:0.44rem;
+    font-size:0.17rem;
+    text-align: center;
+    line-height: 0.44rem;
+}
+.buyingmain{
+    margin:0.44rem 0 0.5rem 0;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.top>a{
+    display: inline-block;
+    width:0.739rem;
+    border-left: 0.01rem solid rgb(246,246,246);
+    border-top: 0.01rem solid rgb(246,246,246);
+    background-color:rgb(255,255,255);
+}
+.a1{
+    border-top:none;
+}
+.a2{
+    border-left:none;
+}
+.top>a>img{
+    width:100%;
+}
+.buying-btm{
+    width:100%;
+    height:3.4rem;
+    background-image: url("http://59.110.229.146/images/imgs3/5e5e35d.png");
+    background-size: 3.75rem 3.4rem;
+    padding:0.15rem 0.1rem 0.13rem 0.1rem;
+    box-sizing: border-box;
+    font-size: 0.18rem;
+    color:white;
+    font-weight: 600;
+}
+.buying-btm>p{
+    text-align: center;
+    position: relative;
+}
+.buying-btm>p>span{
+    display: inline-block;
+    font-size: 0.13rem;
+    height:0.22rem;
+    width:0.5rem;
+    position: absolute;
+    left:3.1rem;
+    top:0.048rem;
+}
+.btm-main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 0.14rem;
+    margin-top: 0.1rem;
+    font-weight: 500;
+}
+.btm-main>a{
+    display: block;
+    width:1.11rem;
+    height:1.36rem;
+    background-color: white;
+    border-radius: 0.08rem;
+    margin:0.03rem;
+    padding:0.1rem;
+    box-sizing: border-box;
+
+}
+.btm-main>a>p{
+    text-align: center;
+    height:0.4rem;
+    margin-bottom: 0.1rem;
+}
+.btm-main span{
+    color:black;
+    font-size:0.15rem;
+}
+.btm-main img{
+    display: block;
+    width:0.7rem;
+    height:0.7rem;
+    margin: 0 auto;
+}
+.foot{
+    height:2.37rem;
+    background-color: white;
+    background-image: url("http://59.110.229.146/images/imgs3/9.9-background.d4afbba.png");
+    background-size: 3.75rem 2rem;
+    background-repeat: no-repeat;
+}
+.foot>p{
+    height:0.5rem;
+    background-image: url("http://59.110.229.146/images/imgs3/seckill-title.925eac7.png");
+    background-size: 1.29rem 0.17rem;
+    background-repeat: no-repeat;
+    background-position: 1.25rem 0.165rem;
+    position: relative;
+}
+.foot>p>span{
+    display: inline-block;
+    font-size: 0.13rem;
+    height:0.22rem;
+    width:0.5rem;
+    position: absolute;
+    left:3.2rem;
+    top:0.16rem;
+    color:white;
+    background-image: url("http://59.110.229.146/images/imgs2/ddcategory_more_icon.png");
+    background-repeat: no-repeat;
+    background-size: 0.1rem 0.1rem;
+    background-position: 0.38rem 0.05rem;
+}
+.foot1{
+    overflow: hidden;
+    width:3.75rem;
+}
+.foots{
+    width:20rem;
+    height:1.74rem;
+    font-size:0.16rem;
+    padding-left:0.05rem;
+    box-sizing: border-box;
+}
+.foots.a:nth-of-type(4)::-webkit-scrollbar {
+    display: none;
+}
+.foots>a{
+    display: inline-block;
+    width:1rem;
+    height:1.74rem;
+    background-color: white;
+    margin-left:0.05rem;
+    border-radius: 0.08rem;
+    overflow: hidden;
+}
+.foots>a>img{
+    width:1rem;
+    height:1.04rem;
+}
+.foots p{
+    text-align: center;
+}
+.foots>a>p:nth-of-type(1){
+    font-size:0.14rem;
+    font-weight: 600;
+}
+.foots>a>p:nth-of-type(2){
+    color:red;
+    font-size:0.18rem;
+    font-weight: 600;
+}
+.foots>a>p:nth-of-type(3){
+    font-size:0.13rem;
+    text-decoration: line-through;
+    color:rgb(86,86,86);
+}

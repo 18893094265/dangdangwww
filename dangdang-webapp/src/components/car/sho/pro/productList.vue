@@ -7,7 +7,7 @@
 <script>
     import item from "./item"
     export default {
-        name: 'item',
+        name: 'productList',
         components:{
             "dd-car-content-item":item
         },

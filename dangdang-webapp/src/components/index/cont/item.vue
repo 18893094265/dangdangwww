@@ -1,11 +1,11 @@
 <template>
-    <div><img :src="conent.pic" alt=""></div>
+    <a href="#/main/detail"><img :src="conent.pic" alt=""></a>
 </template>
 
 <script>
     export default {
         name: 'item',
-        props:["data","conent"]
+        props:["data","conent","i"]
     }
 
 

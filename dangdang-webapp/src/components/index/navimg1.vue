@@ -14,7 +14,7 @@
 <script>
     import Swiper from "swiper"
     export default {
-        name: "banner",
+        name: "navimg1",
         data(){
             return {
                 banner:[

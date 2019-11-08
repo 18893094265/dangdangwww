@@ -10,7 +10,7 @@
 <script>
     import shop from "./sho/shop"
     export default {
-        name: 'shop',
+        name: 'vcontent',
         components:{
             "dd-car-content-shop":shop
         },

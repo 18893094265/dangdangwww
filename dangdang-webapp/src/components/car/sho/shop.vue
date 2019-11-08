@@ -14,7 +14,7 @@
 <script>
     import productList from "./pro/productList"
     export default {
-        name: 'productList',
+        name: 'shop',
         components:{
             "dd-car-content-productList":productList
         },

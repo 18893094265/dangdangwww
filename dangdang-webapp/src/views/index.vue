@@ -36,7 +36,6 @@
             _initPageData() {
                 indexapi.getIndexInfo(data => {
                     this.indexInfo = data;
-                    console.log(data)
                 });
             }
         },

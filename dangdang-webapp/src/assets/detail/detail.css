@@ -1,0 +1,183 @@
+html{
+    font-size: 26.67vw;
+}
+body{
+    background-color: rgb(239,244,250);
+}
+.deheader{
+    position: fixed;
+    top:0rem;
+    left:0rem;
+    right:0rem;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(255,255,255);
+    border-bottom: rgb(228,228,228) solid 0.01rem;
+}
+.deheader>div:nth-of-type(1){
+    width:0.4rem;
+    height:0.44rem;
+    padding:0.14rem 0 0 0.15rem;
+    box-sizing: border-box;
+}
+.deheader>div:nth-of-type(2){
+    padding:0.17rem 0 0 0.15rem;
+    box-sizing: border-box;
+    width:0.5rem;
+    height:0.44rem;
+}
+.deheader>div:nth-of-type(1)>img{
+    width:0.09rem;
+    height:0.16rem;
+}
+.deheader>div:nth-of-type(2)>img{
+    width:0.23rem;
+    height:0.08rem;
+}
+.deheader>p{
+    width:2.85rem;
+    height:0.44rem;
+    font-size:0.17rem;
+    text-align: center;
+    line-height: 0.44rem;
+}
+
+.demain{
+    margin:0.44rem 0 0.5rem 0;
+}
+.denav-top{
+    height:0.45rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.14rem;
+    background-color: white;
+    background-image: url("http://59.110.229.146/images/imgs6/nav_arrow.png");
+    background-size: 0.15rem 0.1rem;
+    background-repeat: no-repeat;
+    background-position: 1.34rem 0.38rem;
+}
+.denav-top>a{
+    display: block;
+    height:0.45rem;
+    line-height:0.45rem;
+    color:black;
+}
+.denav-top>a:nth-of-type(2){
+    color:red;
+}
+.denav-btm{
+    height:0.5rem;
+    font-size: 0.14rem;
+    padding-top:0.15rem;
+    box-sizing: border-box;
+    border-top:0.01rem solid rgb(216,216,216);
+    border-bottom:0.01rem solid rgb(216,216,216);
+    background-color: white;
+    background-image: url("http://59.110.229.146/images/imgs6/arrow_unfolded.png");
+    background-size: 0.15rem 0.1rem;
+    background-repeat: no-repeat;
+    background-position: 3.5rem 0.2rem;
+}
+.denav-btm>a{
+    display: inline-block;
+    height:0.2rem;
+    border:0.01rem solid rgb(150,150,150);
+    border-radius: 0.1rem;
+    padding:0 0.1rem;
+    box-sizing: border-box;
+    margin-left:0.15rem;
+    color:rgb(150,150,150);
+}
+.denav-btm>a:nth-of-type(1){
+    background-color: rgb(150,150,150);
+    color:white;
+}
+
+.dediv{
+    display: flex;
+    justify-content: space-around;
+    border-bottom:0.01rem solid rgb(216,216,216);
+    font-size:0.16rem;
+    background-color: white;
+}
+.deleft{
+    width:1.24rem;
+    height:1.68rem;
+}
+.deleft>div{
+    height:0.2rem;
+}
+.deleft>div>span{
+    background-color: red;
+    color:white;
+    font-size: 0.12rem;
+    display: inline-block;
+    padding:0.02rem 0.04rem;
+}
+.deleft>img{
+    width:0.9rem;
+    height:1rem;
+    padding:0.15rem;
+    /*box-sizing: border-box;*/
+}
+.deright{
+    width:2.51rem;
+    height:1.68rem;
+    padding:0.08rem 0.08rem 0.08rem 0;
+    box-sizing: border-box;
+}
+.deright>p{
+    margin-bottom: 0.03rem;
+}
+.deright>p:nth-of-type(2),.deright>p:nth-of-type(3){
+    font-size:0.12rem;
+    color:rgb(160,160,160);
+}
+.deright>p:nth-of-type(4)>span{
+    display: inline-block;
+    height:0.18rem;
+    line-height: 0.18rem;
+    font-size:0.12rem;
+    border-radius: 0.03rem;
+    padding: 0rem 0.04rem;
+    box-sizing: border-box;
+}
+.deright>p:nth-of-type(4)>span:nth-of-type(1){
+    color:red;
+    border: 0.01rem solid rgb(242,48,60);
+}
+.deright>p:nth-of-type(4)>span:nth-of-type(2){
+    color:white;
+    background-color:rgb(242,48,60);
+    margin-left:0.05rem;
+    border: 0.01rem solid rgb(242,48,60);
+}
+.deright>p:nth-of-type(5)>span:nth-of-type(1),.deright>p:nth-of-type(5)>span:nth-of-type(2){
+    color:red;
+    font-size:0.14rem;
+    font-weight: 600;
+}
+.deright>p:nth-of-type(5)>span:nth-of-type(3){
+    color:rgb(160,160,160);
+    font-size:0.12rem;
+    text-decoration: line-through;
+    margin-left:0.08rem;
+}
+.deright>p:nth-of-type(6)>span{
+    display: inline-block;
+    width:0.17rem;
+    height:0.17rem;
+    vertical-align: middle;
+    background-image: url("http://59.110.229.146/images/imgs6/red_star.png");
+    background-repeat: no-repeat;
+    background-size: 0.17rem 0.17rem;
+}
+.deright>p:nth-of-type(6)>span:last-of-type{
+    width:1.3rem;
+    height:0.17rem;
+    font-size:0.12rem;
+    color:rgb(160,160,160);
+    padding-left:0.3rem;
+    box-sizing: border-box;
+    vertical-align:baseline;
+}

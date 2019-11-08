@@ -1,8 +1,8 @@
 import {BASEURL} from "../commons/config"
-const CARTURL =`${BASEURL}/classifyinfo`;
+const CLASSIFYURL =`${BASEURL}/classifyinfo`;
 export default{
-    getIndexInfo(cb){
-        fetch(CARTURL).then(res=>{
+    getclassifyInfo(cb){
+        fetch(CLASSIFYURL).then(res=>{
             res.json().then(cb)
         })
     }

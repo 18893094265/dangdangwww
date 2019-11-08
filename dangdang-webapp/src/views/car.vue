@@ -8,15 +8,15 @@
 
 <script>
     import cartapi from "../apis/cartapi"
-    import header from "../components/car/header"
-    import footer from "../components/car/footer"
-    import content from "../components/car/content"
+    import sheader from "../components/car/header"
+    import sfooter from "../components/car/footer"
+    import scontent from "../components/car/content"
     export default {
         name: 'car',
         components: {
-            "dd-car-header": header,
-            "dd-car-footer": footer,
-            "dd-car-content": content
+            "dd-car-header": sheader,
+            "dd-car-footer": sfooter,
+            "dd-car-content": scontent
         },
         data() {
             return {

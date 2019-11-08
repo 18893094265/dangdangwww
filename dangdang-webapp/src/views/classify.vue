@@ -1,9 +1,9 @@
 <template>
-    <div id="app">
+    <div>
         <dd-classify-header v-if="classifyInfo" :data="classifyInfo.vheader">
 
         </dd-classify-header>
-        <dd-classify-content v-if="classifyInfo" :data="classifyInfo">
+        <dd-classify-content v-if="classifyInfo" :data="classifyInfo.content">
 
         </dd-classify-content>
     </div>
@@ -26,7 +26,7 @@
         },
         methods: {
             _initPageData() {
-                classifyapi.getClassifyInfo(data => {
+                classifyapi.getclassifyInfo(data => {
                     this.classifyInfo = data;
                     console.log(data)
                 });
@@ -40,5 +40,5 @@
 
 
 <style scoped>
-    @import "../../src/assets/classify/classify.css";
+    @import "../assets/classify/classify.css";
 </style>
