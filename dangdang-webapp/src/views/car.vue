@@ -1,6 +1,6 @@
 <template>
     <div>
-        <dd-car-header></dd-car-header>
+        <dd-car-header :data="cartInfo.header" v-if="cartInfo.header"></dd-car-header>
         <dd-car-content :data="cartInfo" v-if="cartInfo"></dd-car-content>
         <dd-car-footer :data="cartInfo.carfooter" v-if="cartInfo.carfooter"></dd-car-footer>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
     import cartapi from "../apis/cartapi"
-    import sheader from "../components/car/header"
+    import sheader from "../components/common/header"
     import sfooter from "../components/car/footer"
     import scontent from "../components/car/content"
     export default {

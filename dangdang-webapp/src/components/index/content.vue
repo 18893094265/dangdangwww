@@ -1,7 +1,7 @@
 <template>
         <!--书-->
         <section class="book">
-            <dd-index-content-shop :data="data" v-for="(conent, i) in data.conents" :key="i" :conent="conent" :i="i"></dd-index-content-shop>
+            <dd-index-content-shop :data="conent" v-for="(conent, i) in data.conents" :key="i" :i="i"></dd-index-content-shop>
         </section>
 </template>
 

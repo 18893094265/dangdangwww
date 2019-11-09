@@ -9,7 +9,7 @@
                 <div class="text">
                     <p>{{data.title}}</p>
                     <p>￥<span>{{data.price}}</span>&nbsp;<span>{{data.yprice}}</span></p>
-                    <p><span>{{data.con}}</span><br>x1</p>
+                    <p><span>{{data.con}}</span><br>x<span>1</span><span class="car-spn"></span></p>
                 </div>
             </div>
             <div class="r-car-btm">
@@ -20,13 +20,29 @@
 </template>
 
 <script>
+    // import $ from "jquery"
     export default {
         name: 'item',
-        props:["data","sid","pid"]
+        props:["data","sid","pid"],
+        // mounted(){
+        //     $(".car-spn").click({
+        //
+        //     })
+        // }
     }
 </script>
 
 
 <style scoped>
-
+    .text{
+        position: relative;
+    }
+    .car-spn{
+        display: inline-block;
+        width:0.3rem;
+        height:0.3rem;
+        position: absolute;
+        top:0.8rem;
+        left:1.7rem;
+    }
 </style>

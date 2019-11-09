@@ -2,7 +2,7 @@ html{
     font-size: 26.67vw;
 }
 body{
-    background-color: white;
+    background-color: rgb(250,250,250);
 }
 .login-main{
     padding:0.85rem 0.4rem 0 0.4rem;
@@ -11,10 +11,12 @@ body{
 }
 .login-main1{
     height:0.7rem;
-    border-bottom: 0.005rem solid gray;
+    line-height:0.7rem;
+    border-bottom: 0.005rem solid rgb(235,235,235);
 }
 .login-main1>a{
-    font-size:0.22rem;
+    font-size:0.21rem;
+    font-weight: 800;
     color:rgb(50,50,50);
     display: inline-block;
     height:0.4rem;
@@ -22,34 +24,92 @@ body{
     line-height: 0.4rem;
     text-align: center;
 }
+.login-main1>a:nth-of-type(1){
+    border-bottom: 0.02rem solid black;
+}
 .login-main1>a:nth-of-type(2){
     text-align:right;
 }
-.login-main2{
+.login-main2,.login-main3{
     height:0.5rem;
     line-height: 0.5rem;
     padding-left: 0.35rem;
     box-sizing: border-box;
-
+    border-bottom: 0.005rem solid rgb(235,235,235);
+    background-repeat: no-repeat;
+    background-size: 0.2rem;
+    background-position: 0.05rem center;
+}
+.login-main2{
+    background-image: url("http://59.110.229.146/images/login/user.png");
 }
 .login-main3{
-    height:0.5rem;
-    line-height: 0.5rem;
-    padding-left: 0.35rem;
-    box-sizing: border-box;
+    position: relative;
+    background-image: url("http://59.110.229.146/images/login/pwd.png");
 }
 .login-main2>input,.login-main3>input{
     width:100%;
+    font-size: 0.16rem;
+    background-color: rgb(250,250,250);
+}
+.login-main3>span{
+    display: inline-block;
+    width:0.2rem;
+    height:0.2rem;
+    position: absolute;
+    top:0.2rem;
+    left:2.6rem;
+    background-image: url("http://59.110.229.146/images/login/beyes.png");
+    background-repeat: no-repeat;
+    background-size: 0.2rem;
+}
+.login-main3 .span-login{
+    background-image: url("http://59.110.229.146/images/login/eyes.png");
+    background-repeat: no-repeat;
+    background-size: 0.2rem;
 }
 .login-main4{
-    height:0.5rem;
-    font-size:0.16rem;
-    /*position: relative;*/
+    height:0.6rem;
+    font-size:0.15rem;
 }
 .login-main4>span{
-    /*position: absolute;*/
-    /*left:0.01rem;*/
-    /*top:0.01rem;*/
+    display: inline-block;
+    width:0.6rem;
+    height:0.6rem;
+    margin:0.05rem 0.065rem;
+    background-color: white;
+    background-image: url("http://59.110.229.146/images/login/rotate.jpg");
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+}
+.login-main4>.span-login1{
+    background-image: url("http://59.110.229.146/images/login/rotate1.jpg");
+}
+.login-main4>span:nth-of-type(2){
+    background-position: -0.65rem 0px;
+}
+.login-main4>span:nth-of-type(3){
+    background-position: -1.25rem 0rem;
+}
+.login-main4>span:nth-of-type(4){
+    background-position: -1.95rem 0rem;
+}
+.login-main4>p{
+    height:0.5rem;
+    line-height: 0.5rem;
+    position: relative;
+}
+.login-main4>p>span{
+    position: absolute;
+    left:2.2rem;
+    top:0rem;
+    padding-right:0.2rem;
+    box-sizing: border-box;
+    color:rgb(243,52,74);
+    background-image: url("http://59.110.229.146/images/login/sx.png");
+    background-repeat: no-repeat;
+    background-size: 0.2rem;
+    background-position: 0.5rem center;
 }
 .login-main5{
     height:1.4rem;
@@ -58,13 +118,86 @@ body{
     height:0.65rem;
 }
 .login-main5 a{
-    font-size:0.22rem;
+    display: inline-block;
+    width:2.98rem;
+    height:0.46rem;
+    line-height:0.46rem;
+    color:white;
+    background-color: rgb(251,182,179);
+    font-size:0.2rem;
+    text-align: center;
+    border-radius: 0.05rem;
+    margin-top:0.1rem;
 }
 .login-p1{
     height:0.5rem;
-    font-size: 0.14rem;
+    line-height: 0.5rem;
+    font-size: 0.15rem;
+}
+.login-p1>a{
+    color:rgb(243,52,74);
+}
+.login-p1>a:nth-of-type(2){
+    float:right;
 }
 .login-main6{
     font-size: 0.14rem;
     height:1rem;
+}
+.login-main6>a{
+    color:rgb(153,153,153);
+}
+.login-main6>span{
+    color:rgb(51,51,51);
+}
+.login-main6>span>a{
+    color:rgb(153,153,153);
+}
+.login-main6>ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.15rem;
+}
+.login-main6>ul>li{
+    display: inline-block;
+}
+.login-main6>ul img{
+    width:0.46rem;
+    height:0.46rem;
+}
+
+
+
+
+
+.logins-main{
+    font-size: 0.15rem;
+    height:0.5rem;
+    line-height: 0.5rem;
+    padding-left: 0.35rem;
+    box-sizing: border-box;
+    border-bottom: 0.005rem solid rgb(235,235,235);
+    background-repeat: no-repeat;
+    background-size: 0.2rem;
+    background-position: 0.05rem center;
+}
+.logins-main{
+    background-image: url("http://59.110.229.146/images/login/iphone.png");
+}
+.logins-main>input{
+    width:100%;
+    font-size: 0.16rem;
+    background-color: rgb(250,250,250);
+}
+.logins-a{
+    margin-top:0.2rem;
+    display: inline-block;
+    width:2.98rem;
+    height:0.46rem;
+    line-height:0.46rem;
+    color:white;
+    background-color: rgb(251,182,179);
+    font-size:0.2rem;
+    text-align: center;
+    border-radius: 0.05rem;
 }

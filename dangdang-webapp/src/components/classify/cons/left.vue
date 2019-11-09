@@ -1,7 +1,5 @@
 <template>
-
-           <a href="#">{{left.text}}</a>
-
+    <a href="#">{{left.text}}</a>
 </template>
 
 <script>

@@ -1,11 +1,11 @@
 <template>
     <div>
-        <dd-index-topimg :data="indexInfo.topimg"></dd-index-topimg>
-        <dd-index-nav :data="indexInfo.nav"></dd-index-nav>
+        <dd-index-topimg v-if="indexInfo.topimg" :data="indexInfo.topimg"></dd-index-topimg>
+        <dd-index-nav v-if="indexInfo.nav" :data="indexInfo.nav"></dd-index-nav>
         <dd-index-navimg1></dd-index-navimg1>
-        <dd-index-navimg2 :data="indexInfo.navimg2"></dd-index-navimg2>
-        <dd-index-content :data="indexInfo"></dd-index-content>
-        <dd-index-seckill :data="indexInfo.seckill"></dd-index-seckill>
+        <dd-index-navimg2 v-if="indexInfo.navimg2" :data="indexInfo.navimg2"></dd-index-navimg2>
+        <dd-index-content v-if="indexInfo" :data="indexInfo"></dd-index-content>
+        <dd-index-seckill v-if="indexInfo.seckill" :data="indexInfo.seckill"></dd-index-seckill>
     </div>
 </template>
 

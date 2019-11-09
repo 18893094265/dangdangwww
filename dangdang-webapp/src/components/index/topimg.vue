@@ -9,9 +9,17 @@
 </template>
 
 <script>
+    import $ from "jquery"
     export default {
         name: 'topimg',
-        props:["data"]
+        props:["data"],
+    mounted() {
+        $(".close-img").click(function () {
+            $(".nav-top1").css({
+                "display":"none"
+            })
+        })
+    }
     }
 </script>
 

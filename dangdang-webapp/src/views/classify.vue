@@ -1,9 +1,9 @@
 <template>
     <div>
-        <dd-classify-header v-if="classifyInfo" :data="classifyInfo.vheader">
+        <dd-classify-header v-if="classifyInfo.vheader" :data="classifyInfo.vheader">
 
         </dd-classify-header>
-        <dd-classify-content v-if="classifyInfo" :data="classifyInfo.content">
+        <dd-classify-content v-if="classifyInfo.content" :data="classifyInfo.content">
 
         </dd-classify-content>
     </div>
@@ -28,7 +28,7 @@
             _initPageData() {
                 classifyapi.getclassifyInfo(data => {
                     this.classifyInfo = data;
-                    console.log(data)
+                    // console.log(data)
                 });
             }
         },

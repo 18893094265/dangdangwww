@@ -59,7 +59,7 @@ main{
 .nav-top>span:nth-of-type(2){
 	width:0.15rem;
 	height:0.15rem;
-	background-image: url("../images/imgs4/info_close.png");
+	background-image: url("http://59.110.229.146/images/imgs4/info_close.png");
 	background-size:0.15rem;
 }
 .nav-btm{
@@ -75,7 +75,7 @@ main{
 .nav-btm>div:nth-of-type(2){
 	width:0.3rem;
 	height:0.44rem;
-	background-image: url("../images/imgs4/dangdang.png");
+	background-image: url("http://59.110.229.146/images/imgs4/dangdang.png");
 	background-size: 0.25rem;
 	background-position: 0.02rem 0.1rem;
 	background-repeat: no-repeat;
@@ -150,7 +150,7 @@ main{
 }
 .text>p:nth-of-type(3){
 	color:rgb(118,118,118);
-	background-image: url("../images/imgs4/edit.png");
+	background-image: url("http://59.110.229.146/images/imgs4/edit.png");
 	background-size: 0.25rem;
 	background-position: 1.7rem 0.13rem;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ main{
 }
 .r-car-btm>p{
 	color:rgb(120,120,120);
-	background-image: url("../images/imgs4/shop_arrow.png");
+	background-image: url("http://59.110.229.146/images/imgs4/shop_arrow.png");
 	background-size: 0.08rem;
 	padding-top:0.02rem;
 	box-sizing: border-box;
@@ -240,7 +240,7 @@ footer>div:nth-of-type(3){
 }
 .qanxuan:checked::before{
 	content: "";
-	background-image: url(../images/imgs6/checked.png);
+	background-image: url(http://59.110.229.146/images/imgs6/checked.png);
 	background-size: 0.24rem;
 	position: absolute;
 	top: 0.07rem;
@@ -273,7 +273,7 @@ footer>div:nth-of-type(3){
 }
 .danxuan:checked::before{
 	content: "";
-	background-image: url(../images/imgs6/checked.png);
+	background-image: url(http://59.110.229.146/images/imgs6/checked.png);
 	background-size: 0.24rem;
 	position: absolute;
 	top: 0.5rem;
@@ -306,7 +306,7 @@ footer>div:nth-of-type(3){
 }
 .cquanxuan:checked::before{
 	content: "";
-	background-image: url(../images/imgs6/checked.png);
+	background-image: url(http://59.110.229.146/images/imgs6/checked.png);
 	background-size: 0.24rem;
 	position: absolute;
 	top: 0.12rem;

@@ -8,6 +8,8 @@ import buying from "../views/buying"
 import my from "../views/my"
 import detail from "../views/detail"
 import login from "../views/login"
+import login1 from "../components/login/login1"
+import login2 from "../components/login/login2"
 
 Vue.use(VueRouter);
 
@@ -19,11 +21,15 @@ let router = new VueRouter({
        },
        {
            path: '/main',
+           redirect: "/main/index",
+       },
+       {
+           path: '/main',
            component: mains,
            children:[
                {
                    path: 'index',
-                   component: indexs
+                   component: indexs,
                },
                {
                    path: 'car',
@@ -49,7 +55,21 @@ let router = new VueRouter({
        },
        {
            path: '/login',
-           component:login
+           redirect: "/login/login1",
+       },
+       {
+           path: '/login',
+           component:login,
+           children:[
+               {
+                   path: 'login1',
+                   component: login1
+               },
+               {
+                   path: 'login2',
+                   component: login2
+               }
+           ]
        }
    ]
 });

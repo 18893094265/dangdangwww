@@ -1,21 +1,21 @@
 <template>
     <div id="app">
-        <dd-my-header></dd-my-header>
+        <dd-my-header :data="MyInfo.header" v-if="MyInfo.header"></dd-my-header>
         <main class="my-main">
             <dd-my-login></dd-my-login>
             <dd-my-nav :data="MyInfo.navs" v-if="MyInfo.navs"></dd-my-nav>
-            <dd-my-order :data="MyInfo.order"></dd-my-order>
+            <dd-my-order :data="MyInfo.order" v-if="MyInfo.order"></dd-my-order>
             <dd-my-imgs></dd-my-imgs>
             <dd-my-vip></dd-my-vip>
-            <dd-my-myxx :data="MyInfo.myxxs"></dd-my-myxx>
-            <dd-my-btm  :data="MyInfo.btm"></dd-my-btm>
+            <dd-my-myxx :data="MyInfo.myxxs" v-if="MyInfo.myxxs"></dd-my-myxx>
+            <dd-my-btm  :data="MyInfo.btm" v-if="MyInfo.btm"></dd-my-btm>
         </main>
     </div>
 </template>
 
 <script>
     import myapi from "../apis/myapi"
-    import header from "../components/my/header"
+    import header from "../components/common/header"
     import login from "../components/my/login"
     import nav from "../components/my/nav"
     import order from "../components/my/order"
@@ -44,7 +44,7 @@
             adc(){
                myapi.getMyInfo(data=>{
                    this.MyInfo=data;
-                   console.log(data)
+                   // console.log(data)
                })
             }
         },

@@ -4,7 +4,7 @@
             <div class="swiper-slide" v-for="(u,index) in banner" :key="index"><img :src="u" ></div>
         </div>
         <!-- 如果需要分页器 -->
-        <div class="swiper-pagination"></div>
+<!--        <div class="swiper-pagination"></div>-->
     </div>
 </template>
 
