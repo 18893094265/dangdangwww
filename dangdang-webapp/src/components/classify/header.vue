@@ -1,14 +1,23 @@
 <template>
+    <div>
     <header>
         <div class="go">
             <img src="http://59.110.229.146/images/imgs2/arrow_left.png" alt="123">
         </div>
         <input type="text" :placeholder="data.vinput">
-        <div>
+        <div class="go1">
             <img src="http://59.110.229.146/images/imgs2/menu.png" alt="123">
         </div>
         <span></span>
     </header>
+        <div class="hide hide1">
+            <a href="#/main/index"><img src="http://59.110.229.146/images/main/icon_03_in-1536891748.png" alt=""></a>
+            <a href="#/main/classify"><img src="http://59.110.229.146/images/imgs1/feilei-8-2.png" alt=""></a>
+            <a href="#/main/buying"><img src="http://59.110.229.146/images/main/ic_buy_normal-1537519625.png" alt=""></a>
+            <a href="#/main/car"><img src="http://59.110.229.146/images/imgs1/guowuche-8-2.png" alt=""></a>
+            <a href="#/main/my"><img src="http://59.110.229.146/images/imgs1/wodedangdang---4.png" alt=""></a>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -18,7 +27,14 @@
         props:["data"],
         mounted() {
             $(".go").click(function () {
-                window.history.go(-1)
+                window.history.go(-1);
+            });
+            $(".go1").click(()=>{
+                if($(".hide").hasClass("hide1")){
+                    $(".hide").removeClass("hide1");
+                }else{
+                    $(".hide").addClass("hide1");
+                }
             })
         }
     }
@@ -26,5 +42,25 @@
 
 
 <style scoped>
-
+    .hide{
+        padding-top:0.5rem;
+        box-sizing: border-box;
+        height:0.4rem;
+        font-size: 0.1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .hide>a{
+        display: inline-block;
+        width:13%;
+        height:0.4rem;
+        padding: 0.05rem 0 0 0.25rem;
+    }
+    .hide>a>img{
+        width:0.3rem;
+        height:0.3rem;
+    }
+    .hide1{
+        display: none;
+    }
 </style>

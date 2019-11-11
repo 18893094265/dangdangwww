@@ -1,5 +1,5 @@
 <template>
-    <div class="mydiv5 mydiv2"><a href="" :style="'background-image:url('+data.pic+')'">{{data.text}}</a><a href=""></a></div>
+    <div class="mydiv5 mydiv2"><a href="#/login" :style="'background-image:url('+data.pic+')'">{{data.text}}</a><a href="#/login"></a></div>
 </template>
 
 <script>

@@ -20,15 +20,15 @@
 </template>
 
 <script>
-    // import $ from "jquery"
+    import $ from "jquery"
     export default {
         name: 'item',
         props:["data","sid","pid"],
-        // mounted(){
-        //     $(".car-spn").click({
-        //
-        //     })
-        // }
+        mounted(){
+            $(".r-car-top>img").click(()=>{
+                location.href="#/cardetail"
+            })
+        }
     }
 </script>
 

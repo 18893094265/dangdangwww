@@ -5,7 +5,7 @@
                 <dd-classify-con-left :key="i" v-for="(left,i) in data.lefts" :left="left" :i="i"></dd-classify-con-left>
             </div>
         </section>
-        <dd-classify-con-right v-if="data.right" :data="data.right">
+        <dd-classify-con-right :data="scr">
 
         </dd-classify-con-right>
     </main>
@@ -20,7 +20,7 @@
             "dd-classify-con-left":left,
             "dd-classify-con-right":right
         },
-        props:["data"]
+        props:["data","scr"]
     }
 </script>
 

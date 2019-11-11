@@ -23,5 +23,10 @@
 
 
 <style scoped>
-
+    .foot1{
+        overflow: auto;
+    }
+    .foot1::-webkit-scrollbar{
+        display: none;
+    }
 </style>

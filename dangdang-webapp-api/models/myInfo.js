@@ -1,6 +1,9 @@
 module.exports={
     getMyInfo(){
       let myInfo= {
+          "header":{
+              "text":"我的当当"
+          },
           "navs": [
               {
                   "num": 0,

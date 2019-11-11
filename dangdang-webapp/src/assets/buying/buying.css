@@ -158,13 +158,13 @@ body{
     width:3.75rem;
 }
 .foots{
-    width:20rem;
+    width:9.2rem;
     height:1.74rem;
     font-size:0.16rem;
     padding-left:0.05rem;
     box-sizing: border-box;
 }
-.foots.a:nth-of-type(4)::-webkit-scrollbar {
+.foots>a:nth-of-type(4)::-webkit-scrollbar {
     display: none;
 }
 .foots>a{
@@ -174,7 +174,6 @@ body{
     background-color: white;
     margin-left:0.05rem;
     border-radius: 0.08rem;
-    overflow: hidden;
 }
 .foots>a>img{
     width:1rem;

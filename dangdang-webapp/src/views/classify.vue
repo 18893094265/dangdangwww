@@ -3,7 +3,7 @@
         <dd-classify-header v-if="classifyInfo.vheader" :data="classifyInfo.vheader">
 
         </dd-classify-header>
-        <dd-classify-content v-if="classifyInfo.content" :data="classifyInfo.content">
+        <dd-classify-content v-if="classifyInfo.content" :data="classifyInfo.content" :scr="classifyInfo.content.rights[id]">
 
         </dd-classify-content>
     </div>
@@ -22,18 +22,24 @@
         data() {
             return {
                 classifyInfo: [],
+                id:0
             }
         },
         methods: {
             _initPageData() {
                 classifyapi.getclassifyInfo(data => {
                     this.classifyInfo = data;
-                    // console.log(data)
                 });
             }
         },
         beforeMount(){
             this._initPageData()
+        },
+        mounted(){
+            this.$bus.$on("change",(i)=>{
+                this.id=i;
+                console.log(i)
+            })
         }
     }
 </script>

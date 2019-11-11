@@ -2,7 +2,7 @@
     <div>
         <section class="nav-btm">
             <div class="checkbox">
-                <input type="checkbox" v-model="data.checked" class="qanxuan"/>
+                <input type="checkbox" v-model="data.checked" @click="shopselect(sid)" class="qanxuan"/>
             </div>
             <div class="img"></div><div>{{data.shopName}}</div><div>{{data.goods}}</div>
             <a href="">编辑</a>
@@ -18,7 +18,12 @@
         components:{
             "dd-car-content-productList":productList
         },
-        props:["data","sid"]
+        props:["data","sid"],
+        methods:{
+            shopselect(sid){
+                this.$emit("sAll",sid)
+            }
+        }
     }
 </script>
 

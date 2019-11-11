@@ -10,6 +10,7 @@ import detail from "../views/detail"
 import login from "../views/login"
 import login1 from "../components/login/login1"
 import login2 from "../components/login/login2"
+import cardetail from "../views/cardetail"
 
 Vue.use(VueRouter);
 
@@ -70,6 +71,10 @@ let router = new VueRouter({
                    component: login2
                }
            ]
+       },
+       {
+           path: '/cardetail',
+           component: cardetail
        }
    ]
 });

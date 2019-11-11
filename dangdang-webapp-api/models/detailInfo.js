@@ -13,19 +13,19 @@ module.exports={
                 },
                 {
                     "title": "童书新书榜"
+                },
+                {
+                    "title": "童书畅销榜"
+                },
+                {
+                    "title": "热搜榜"
+                },
+                {
+                    "title": "好评榜"
+                },
+                {
+                    "title": "飙升榜"
                 }
-                // {
-                //     "title": "童书畅销榜"
-                // },
-                // {
-                //     "title": "热搜榜"
-                // },
-                // {
-                //     "title": "好评榜"
-                // },
-                // {
-                //     "title": "飙升榜"
-                // }
             ],
             "topmarks": [
                 {
@@ -50,7 +50,7 @@ module.exports={
                     "cb":"出版社：作家出版社",
                     "shop":"当当自营",
                     "activity":"限时抢",
-                    "price":10.00,
+                    "price":"10.00",
                     "yprice":"￥25.00",
                     "img1":"http://59.110.229.146/images/imgs6/red_star.png",
                     "img2":"http://59.110.229.146/images/imgs6/gray_star.png",
@@ -64,7 +64,7 @@ module.exports={
                     "cb":"出版社：作家出版社",
                     "shop":"当当自营",
                     "activity":"限时抢",
-                    "price":52.90,
+                    "price":"52.90",
                     "yprice":"￥108.00",
                     "img1":"http://59.110.229.146/images/imgs6/red_star.png",
                     "img2":"http://59.110.229.146/images/imgs6/gray_star.png",
@@ -78,7 +78,7 @@ module.exports={
                     "cb":"出版社：作家出版社",
                     "shop":"当当自营",
                     "activity":"限时抢",
-                    "price":17.50,
+                    "price":"17.50",
                     "yprice":"￥35.00",
                     "img1":"http://59.110.229.146/images/imgs6/red_star.png",
                     "img2":"http://59.110.229.146/images/imgs6/gray_star.png",
@@ -92,7 +92,7 @@ module.exports={
                     "cb":"出版社：作家出版社",
                     "shop":"当当自营",
                     "activity":"限时抢",
-                    "price":10.00,
+                    "price":"10.00",
                     "yprice":"￥25.00",
                     "img1":"http://59.110.229.146/images/imgs6/red_star.png",
                     "img2":"http://59.110.229.146/images/imgs6/gray_star.png",

@@ -6,6 +6,8 @@ const indexInfo = require("../models/indexInfo");
 const buyingInfo = require("../models/buyingInfo");
 const myInfo = require("../models/myInfo");
 const detailInfo =require("../models/detailInfo");
+const loginInfo = require ("../models/loginInfo");
+const  mainInfo =require("../models/mainInfo")
 
 //解决跨域问题
 router.all("*",(req,res,next)=>{
@@ -40,6 +42,14 @@ router.get("/myinfo",function (req,res,next) {
 
 router.get("/detailinfo",function (req,res,next) {
     res.jsonp(detailInfo.getDetailInfo());
+});
+
+router.get("/logininfo",function (req,res,next) {
+    res.jsonp(loginInfo.getLoginInfo());
+});
+
+router.get("/maininfo",(req,res)=>{
+    res.jsonp(mainInfo.getMainInfo());
 });
 
 module.exports = router;

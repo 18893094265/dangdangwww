@@ -1,6 +1,6 @@
 <template>
     <section class="mydiv2">
-        <a href="">{{data.text1}}</a><a href="">{{data.text2}}</a>
+        <a href="#/login">{{data.text1}}</a><a href="">{{data.text2}}</a>
     </section>
 </template>
 

@@ -1,6 +1,8 @@
 <template>
     <section class="denav-top">
-        <dd-detail-nav-item v-for="(nav,i) in data" :key="i" :data="nav"></dd-detail-nav-item>
+        <div>
+            <dd-detail-nav-item v-for="(nav,i) in data" :key="i" :data="nav"></dd-detail-nav-item>
+        </div>
     </section>
 </template>
 
@@ -17,5 +19,8 @@
 
 
 <style scoped>
-
+    div{
+        display: flex;
+        width:7rem;
+    }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <a href=""><p>{{data.num}}</p><p>{{data.text}}</p></a>
+    <a href="#/login"><p>{{data.num}}</p><p>{{data.text}}</p></a>
 </template>
 
 <script>

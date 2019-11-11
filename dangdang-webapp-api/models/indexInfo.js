@@ -8,7 +8,7 @@ module.exports = {
                 },
                 "nav":{
                     "pic1":"http://59.110.229.146/images/imgs1/logo.png",
-                    "input":"了不起的中国",
+                    "vinput":"了不起的中国",
                     "pic2":"http://59.110.229.146/images/imgs1/meau.png"
                 },
                 "navimg2":{
@@ -39,6 +39,6 @@ module.exports = {
                 ]
             };
 
-        return indexInfo
+        return indexInfo;
     }
 };
