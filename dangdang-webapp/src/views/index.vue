@@ -4,7 +4,7 @@
         <dd-index-nav v-if="indexInfo.nav" :data="indexInfo.nav"></dd-index-nav>
         <dd-index-navimg1></dd-index-navimg1>
         <dd-index-navimg2 v-if="indexInfo.navimg2" :data="indexInfo.navimg2"></dd-index-navimg2>
-        <dd-index-content v-if="indexInfo" :data="indexInfo"></dd-index-content>
+        <dd-index-content v-if="indexInfo" :data="indexInfo" @con="spacel"></dd-index-content>
         <dd-index-seckill v-if="indexInfo.seckill" :data="indexInfo.seckill"></dd-index-seckill>
     </div>
 </template>
@@ -37,6 +37,11 @@
                 indexapi.getIndexInfo(data => {
                     this.indexInfo = data;
                 });
+            },
+            spacel(i){
+                if(i==0){
+                    location.href="#/main/detail"
+                }
             }
         },
         beforeMount(){

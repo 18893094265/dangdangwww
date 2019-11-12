@@ -27,14 +27,14 @@
         mounted() {
             $(".login-main4>span").click(function () {
                 const size = 0.6;
-                let ss = parseInt($(this).css("backgroundPositionY"));
-                if(ss<=-180){
+                let ss = parseInt($(this).css("backgroundPositionY"))/100;
+                if(ss<=-1.8){
                     $(this).css({
                         "backgroundPositionY": 0
                     })
                 }else{
                     $(this).css({
-                        "backgroundPositionY": ss - size*100
+                        "backgroundPositionY": (ss - size)*100
                     })
                 }
             })

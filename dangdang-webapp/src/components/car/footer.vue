@@ -1,10 +1,10 @@
 <template>
     <footer class="footer1">
         <div class="checkbox2">
-            <input type="checkbox" id="list" class="cquanxuan" @click="selectAll" v-model="data.checked1"/><label for="list">全选</label>
+            <input type="checkbox" id="list" class="cquanxuan" @change="selectAll" v-model="data.carfooter.checked1"/><label for="list">全选</label>
         </div>
-        <div>合计&nbsp;<span>￥</span><span>{{data.totalcost1}}</span></div>
-        <div>结算<span>({{data.num}})</span></div>
+        <div>合计&nbsp;<span>￥</span><span>{{data|countPrice}}</span></div>
+        <div>结算<span>({{data | nums}})</span></div>
     </footer>
 </template>
 
@@ -20,14 +20,25 @@
         filters:{
             countPrice(cartInfo){
                 let total = 0;
-                cartInfo.shops.forEach((shop,sid)=>{
-                    shop.products.forEach((product,pid)=>{
+                cartInfo.shops.forEach((shop)=>{
+                    shop.products.forEach((product)=>{
                         if(product.checked){
-                        total +=product.price*product.num
+                            total +=product.price*product.num
                         }
                     })
                 });
                 return total;
+            },
+            nums(cartInfo){
+                let sum =0;
+                cartInfo.shops.forEach((shop)=>{
+                    shop.products.forEach((product)=>{
+                        if(product.checked){
+                            sum +=product.num
+                        }
+                    })
+                });
+                return sum;
             }
         }
     }

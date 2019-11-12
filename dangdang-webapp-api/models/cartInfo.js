@@ -16,17 +16,19 @@ module.exports = {
                                 "title":"人性的弱点（权威译本）",
                                 "pic":"http://59.110.229.146/images/imgs4/23562339-1_4.jpg",
                                 "yprice":"￥39.80",
-                                "price":"19.10",
+                                "price":"19.00",
                                 "con":"限时抢",
-                                "checked":true
+                                "checked":true,
+                                "num":1
                             },
                             {
                                 "title":"孙子兵法--中华经典藏书（平装）",
                                 "pic":"http://59.110.229.146/images/imgs4/23691198-1_8.jpg",
                                 "yprice":"￥35.00",
-                                "price":"16.80",
+                                "price":"16.00",
                                 "con":"秒杀",
-                                "checked":true
+                                "checked":true,
+                                "num":1
                             }
                         ]
                     },
@@ -40,17 +42,19 @@ module.exports = {
                                 "title":"鬼谷子—————中华经典藏书（精装双色插图版）",
                                 "pic":"http://59.110.229.146/images/imgs4/23691200-1_10.jpg",
                                 "yprice":"￥58.00",
-                                "price":"27.90",
+                                "price":"27.00",
                                 "con":"秒杀",
-                                "checked":true
+                                "checked":true,
+                                "num":1
                             },
                             {
                                 "title":"孙子兵法--中华经典藏书12（平装）",
                                 "pic":"http://59.110.229.146/images/imgs4/23691200-1_10.jpg",
                                 "yprice":"￥35.00",
-                                "price":"16.80",
+                                "price":"16.00",
                                 "con":"秒杀",
-                                "checked":true
+                                "checked":true,
+                                "num":1
                             }
                         ]
                     }

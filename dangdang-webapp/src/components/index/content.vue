@@ -1,7 +1,7 @@
 <template>
         <!--书-->
         <section class="book">
-            <dd-index-content-shop :data="conent" v-for="(conent, i) in data.conents" :key="i" :i="i"></dd-index-content-shop>
+            <dd-index-content-shop :data="conent" @con="con" v-for="(conent, i) in data.conents" :key="i" :i="i"></dd-index-content-shop>
         </section>
 </template>
 
@@ -12,7 +12,12 @@
         components:{
             "dd-index-content-shop":item
         },
-        props:["data","i"]
+        props:["data","i"],
+        methods:{
+            con(i){
+               this.$emit("con",i)
+            }
+        }
     }
 </script>
 

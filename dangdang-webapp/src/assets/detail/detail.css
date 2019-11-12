@@ -74,7 +74,7 @@ body{
 .denav-btm{
     height:0.5rem;
     font-size: 0.14rem;
-    padding-top:0.15rem;
+    /*padding-top:0.15rem;*/
     box-sizing: border-box;
     border-top:0.01rem solid rgb(216,216,216);
     border-bottom:0.01rem solid rgb(216,216,216);

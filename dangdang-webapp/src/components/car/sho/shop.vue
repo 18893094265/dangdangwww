@@ -2,12 +2,12 @@
     <div>
         <section class="nav-btm">
             <div class="checkbox">
-                <input type="checkbox" v-model="data.checked" @click="shopselect(sid)" class="qanxuan"/>
+                <input type="checkbox" v-model="data.checked" @change="shopChecked(sid)" class="qanxuan"/>
             </div>
             <div class="img"></div><div>{{data.shopName}}</div><div>{{data.goods}}</div>
             <a href="">编辑</a>
         </section>
-        <dd-car-content-productList :data="data" :sid="sid"></dd-car-content-productList>
+        <dd-car-content-productList :data="data" @pAll="pAll" :sid="sid"></dd-car-content-productList>
     </div>
 </template>
 
@@ -20,8 +20,11 @@
         },
         props:["data","sid"],
         methods:{
-            shopselect(sid){
+            shopChecked(sid){
                 this.$emit("sAll",sid)
+            },
+            pAll(sid){
+                this.$emit("pAll",sid)
             }
         }
     }
